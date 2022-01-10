@@ -15,7 +15,7 @@ body {
 header {
     font-family: 'Shrikhand', cursive;
     text-align: center;
-    box-shadow: 0 0 0 .5rem rgb( 0 0 0 /25%);
+    box-shadow: 0 0 0 0.5rem rgb(0 0 0 /25%);
     padding: 0.3rem;
     margin: 0;
     position: relative;
@@ -34,6 +34,38 @@ main .city i {
     font-size: 1.5rem;
 }
 
+/* Explorer */
 
+.explorer {
+    text-align: center;
+}
+
+.explorer h2{
+    margin-top:2rem;
+    font-size:2rem;
+}
+
+.explorer p{
+    font-size:1rem;
+}
+
+.explorer button{
+    color:white;
+    font-weight:300;
+    font-size:1.5rem;
+    padding:1.5rem 2rem;
+    border: none;
+    border-radius:2rem;
+    box-shadow:2px 1px 8px -3px #000000; 
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), 
+    rgba(255,121,218,0.9));
+    transition:all 200ms;
+    margin-top:1rem;
+}
+
+.explorer button:hover{
+    transform:scale(1.02);
+    opacity:0.9;
+}
 
 

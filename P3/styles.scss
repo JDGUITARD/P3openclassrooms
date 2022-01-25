@@ -20,18 +20,17 @@ header {
     margin: 0;
     position: relative;
 }
-main .city{
+.city{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     background-color: #F3F3F3;
     text-align:center;
-    padding: 0.3rem;
+    padding: 0.3rem
 }
-
-main .city i {
-    font-size: 1.5rem;
+.city i{   
+font-size: 1.5rem;
 }
 
 /* Explorer */
@@ -66,4 +65,32 @@ main .city i {
 .explorer button:hover{
     transform:scale(1.02);
     opacity:0.9;
+    }
+main {
+    padding: 0 1rem;
 }
+.tuto {
+ & ol {
+     display:flex;
+     flex-wrap:wrap;
+     gap:1rem;
+     @media (max-width:800px){
+        flex-direction:column;    
+    }
+ }
+
+ & li{
+    background-color: #F6F6F6;
+    padding: 1rem 2rem;
+    border:1px solid red;
+    flex-grow: 1;
+    border-radius:1rem;
+    box-shadow:2px 1px 8px -3px #000000;
+    &:hover{
+        transform:scale(1.02);
+    }
+   }
+}
+
+
+

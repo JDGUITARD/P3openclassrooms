@@ -72,7 +72,6 @@ main {
 
 .tuto ol {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
 }
 @media (max-width: 800px) {
@@ -82,14 +81,16 @@ main {
 }
 .tuto li {
   background-color: #F6F6F6;
-  padding: 1rem 2rem;
-  border: 1px solid red;
+  padding: 1.5rem 2rem;
   flex-grow: 1;
   border-radius: 1rem;
   box-shadow: 2px 1px 8px -3px #000000;
 }
 .tuto li:hover {
   transform: scale(1.02);
+}
+.tuto li i.fas {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

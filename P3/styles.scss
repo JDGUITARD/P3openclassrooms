@@ -41,7 +41,6 @@ font-size: 1.5rem;
 }
 
 .explorer h2{
-    margin-top:2rem;
     font-size:2rem;
 }
 
@@ -69,6 +68,10 @@ font-size: 1.5rem;
     }
 main {
     padding: 0 7rem;
+}
+h2 {
+    padding:2rem 0;
+    margin:0;
 }
 .tuto {
     counter-reset:steps;
@@ -126,16 +129,45 @@ main {
         display:grid;
         grid-template-columns: (repeat(2, 1fr));
         gap:2rem;
+        @media (max-width:767px){
+            grid-template-columns: (repeat(1, 1fr)); 
+        }
+        .new {
+            position:relative;
+        }
+        .new::before{
+            content:"Nouveau";
+            position:absolute;
+            height: 2rem;
+            width: 5rem;
+            background-color:#99E2D0;
+            color:darken(#99E2D0,50%);
+            display: grid;
+            place-items:center;
+            right: 1rem;
+            top: 1rem;
+        }
     }
 
     .card {
-        border:1px solid black;
-        &.card__image{
-            background-image: url(../P3/images/restaurants/menu1.jpg);
-            height: 300px;
-        }
-       
-    }
+        .card__image{
+            height: 15rem;
+            background-size:cover; 
+            border-radius: 1rem;  
+    } 
+        .card__image1{
+            background-image:url(../P3/images/restaurants/menu1.jpg);
+}
+        .card__image2{
+            background-image:url(../P3/images/restaurants/menu2.jpg);
+}
+        .card__image3{
+            background-image:url(../P3/images/restaurants/menu3.jpg);
+}
+         .card__image4{
+            background-image:url(../P3/images/restaurants/menu4.jpg);
+}
+}
 }
 
 

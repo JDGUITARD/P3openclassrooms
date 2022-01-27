@@ -68,10 +68,11 @@ font-size: 1.5rem;
     opacity:0.9;
     }
 main {
-    padding: 0 1rem;
+    padding: 0 7rem;
 }
 .tuto {
     counter-reset:steps;
+    margin-bottom:2rem;
  & ol {
      display:flex;
      gap:2rem;
@@ -94,7 +95,8 @@ main {
          border-radius:50%;
          position:absolute;
          left:-$tuto-bullet-height;
-         bottom:$tuto-bullet-height;
+         top:50%;
+         transform:translateY(-50%);
      }
     list-style-type:none;
     background-color: #F6F6F6;
@@ -109,12 +111,31 @@ main {
         margin-right: 1rem;
         color:#7e7e7e;
         font-size:1.5rem;
-    } 
-}
- 
-
+    }
 
 }
+}
+.menus{
+    background-color:#F6F6F6;
 
+    h2{
+        margin-bottom:2rem;
+    }
+
+    .menus__cards{
+        display:grid;
+        grid-template-columns: (repeat(2, 1fr));
+        gap:2rem;
+    }
+
+    .card {
+        border:1px solid black;
+        &.card__image{
+            background-image: url(../P3/images/restaurants/menu1.jpg);
+            height: 300px;
+        }
+       
+    }
+}
 
 

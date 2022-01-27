@@ -67,11 +67,12 @@ header {
 }
 
 main {
-  padding: 0 1rem;
+  padding: 0 7rem;
 }
 
 .tuto {
   counter-reset: steps;
+  margin-bottom: 2rem;
 }
 .tuto ol {
   display: flex;
@@ -103,7 +104,8 @@ main {
   border-radius: 50%;
   position: absolute;
   left: -1rem;
-  bottom: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .tuto li:hover {
   transform: scale(1.02);
@@ -112,6 +114,25 @@ main {
   margin-right: 1rem;
   color: #7e7e7e;
   font-size: 1.5rem;
+}
+
+.menus {
+  background-color: #F6F6F6;
+}
+.menus h2 {
+  margin-bottom: 2rem;
+}
+.menus .menus__cards {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  gap: 2rem;
+}
+.menus .card {
+  border: 1px solid black;
+}
+.menus .card.card__image {
+  background-image: url(../P3/images/restaurants/menu1.jpg);
+  height: 15rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

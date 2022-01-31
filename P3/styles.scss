@@ -68,10 +68,23 @@ font-size: 1.5rem;
     }
 main {
     padding: 0 7rem;
+    @media (max-width: 1000px){
+        padding:0 1rem;
+    }
 }
 h2 {
     padding:2rem 0;
     margin:0;
+}
+h3,p {
+    margin:0
+}
+h3{
+    padding-top:0.5rem;
+}
+a {
+    text-decoration:none;
+    color:inherit;
 }
 .tuto {
     counter-reset:steps;
@@ -120,6 +133,7 @@ h2 {
 }
 .menus{
     background-color:#F6F6F6;
+    margin-bottom:2rem;
 
     h2{
         margin-bottom:2rem;
@@ -153,7 +167,7 @@ h2 {
         .card__image{
             height: 15rem;
             background-size:cover; 
-            border-radius: 1rem;  
+            border-radius: 1rem 1rem 0 0;  
     } 
         .card__image1{
             background-image:url(../P3/images/restaurants/menu1.jpg);
@@ -164,10 +178,49 @@ h2 {
         .card__image3{
             background-image:url(../P3/images/restaurants/menu3.jpg);
 }
-         .card__image4{
+        .card__image4{
             background-image:url(../P3/images/restaurants/menu4.jpg);
 }
+}       .card__description{
+            position:relative;
+            background-color:white;
+            border-radius:0 0 1rem 1rem;
+            h3,p{
+                padding:0.3rem;
+            }
+            i{ 
+                font-size:2rem;
+                position: absolute;
+                right:1rem;
+                top:50%;
+                transform:translateY(-50%);
+            }
+            .fas{
+                color:transparent;
+                background-image:linear-gradient(to top, rgba(147, 86, 220, 0.9), 
+                rgba(255,121,218,0.9));
+                background-clip:text;
+                webkit- background-clip:text{}
+                opacity:0;
+                transition:all 200ms ease-in-out;
+            }
+            &:hover .fas{
+                opacity:1;
+            }
 }
+}
+footer{
+    background-color:#353535;
+    padding:1rem 2rem;
+    color:white;
+}
+h2 {
+    font-family:"Shrikhand","sans-serif";
+    font-weight:500;
+    padding: 1rem 0;
+}
+p{
+    padding:0.2rem;
 }
 
 

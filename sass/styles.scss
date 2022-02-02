@@ -67,7 +67,7 @@ font-size: 1.5rem;
     opacity:0.9;
     }
 main {
-    padding: 0 7rem;
+    padding: 0 1rem;
     @media (max-width: 1000px){
         padding:0 1rem;
     }
@@ -143,6 +143,7 @@ a {
         display:grid;
         grid-template-columns: (repeat(2, 1fr));
         gap:2rem;
+        
         @media (max-width:767px){
             grid-template-columns: (repeat(1, 1fr)); 
         }
@@ -167,7 +168,8 @@ a {
         .card__image{
             height: 15rem;
             background-size:cover; 
-            border-radius: 1rem 1rem 0 0;  
+            border-radius: 1rem 1rem 0 0;
+            box-shadow:3px 3px 5px grey;
     } 
         .card__image1{
             background-image:url(../images/restos/menu1.jpg);
@@ -185,6 +187,7 @@ a {
             position:relative;
             background-color:white;
             border-radius:0 0 1rem 1rem;
+            box-shadow:3px 3px 5px grey;
             h3,p{
                 padding:0.3rem;
             }

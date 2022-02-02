@@ -67,7 +67,7 @@ header {
 }
 
 main {
-  padding: 0 7rem;
+  padding: 0 1rem;
 }
 @media (max-width: 1000px) {
   main {
@@ -175,6 +175,7 @@ a {
   height: 15rem;
   background-size: cover;
   border-radius: 1rem 1rem 0 0;
+  box-shadow: 3px 3px 5px grey;
 }
 .menus .card .card__image1 {
   background-image: url(../images/restos/menu1.jpg);
@@ -192,6 +193,7 @@ a {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
+  box-shadow: 3px 3px 5px grey;
 }
 .menus .card__description h3, .menus .card__description p {
   padding: 0.3rem;

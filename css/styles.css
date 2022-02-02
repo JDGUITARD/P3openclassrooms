@@ -176,16 +176,16 @@ a {
   border-radius: 1rem 1rem 0 0;
 }
 .menus .card .card__image1 {
-  background-image: url(../P3/images/restaurants/menu1.jpg);
+  background-image: url(../images/restos/menu1.jpg);
 }
 .menus .card .card__image2 {
-  background-image: url(../P3/images/restaurants/menu2.jpg);
+  background-image: url(../images/restos/menu2.jpg);
 }
 .menus .card .card__image3 {
-  background-image: url(../P3/images/restaurants/menu3.jpg);
+  background-image: url(../images/restos/menu3.jpg);
 }
 .menus .card .card__image4 {
-  background-image: url(../P3/images/restaurants/menu4.jpg);
+  background-image: url(../images/restos/menu4.jpg);
 }
 .menus .card__description {
   position: relative;

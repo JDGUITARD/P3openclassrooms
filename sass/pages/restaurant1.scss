@@ -1,4 +1,31 @@
 img{
     max-width: 100%;
-
 }
+main h2{
+    font-family: "shrikhand", "sans-serif";
+}
+.card__description1{
+    position:relative;
+    i{ 
+        font-size:2rem;
+        position: absolute;
+        right:1rem;
+        top:50%;
+        transform:translateY(-50%);
+    }
+    .fas{
+        color:transparent;
+        background-image:linear-gradient(to top, rgba(147, 86, 220, 0.9), 
+        rgba(255,121,218,0.9));
+        background-clip:text;
+        -webkit-background-clip:text;
+        opacity:0;
+        transition:all 200ms ease-in-out;
+    }
+    &:hover .fas{
+        opacity:1;
+
+        }
+
+        }
+   

@@ -9,23 +9,27 @@ main h2 {
 .card__description1 {
   position: relative;
 }
-.card__description1 i {
+
+.card__description1:hover .classs {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.04);
+}
+
+.fa-heart {
   font-size: 2rem;
   position: absolute;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
 }
-.card__description1 .fas {
+
+.classs {
   color: transparent;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms ease-in-out;
-}
-.card__description1:hover .fas {
-  opacity: 1;
 }
 
 /*# sourceMappingURL=restaurant1.css.map */

@@ -215,6 +215,7 @@ a {
 }
 .menus .card__description:hover .fas {
   opacity: 1;
+  transform: translateY(-50%) scale(1.04);
 }
 
 footer {

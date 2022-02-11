@@ -69,17 +69,18 @@ font-size: 1.5rem;
     }
 main {
     padding: 0 7rem;
-    @media (max-width: 1000px){
+    @media (max-width:992px){
         padding:0 1rem;
     }
 }
-h2 {
-    padding:2rem 0;
+h1,h2,h3,h4,h5,h6,p{
+    padding:0;
+}
+p {
+    padding:0;
     margin:0;
 }
-h3,p {
-    margin:0
-}
+
 h3{
     padding-top:0.5rem;
 }
@@ -132,6 +133,7 @@ a {
 
 }
 }
+#homepage{ 
 .menus{
     background-color:#F6F6F6;
     margin-bottom:2rem;
@@ -213,7 +215,7 @@ a {
                 transform:translateY(-50%) scale(1.04);
             }
 }
-}
+}} 
 footer{
     background-color:#353535;
     padding:1rem 2rem;
@@ -226,8 +228,6 @@ h2 {
 }
 p{
     padding:0.2rem;
-
-
 }
 
 

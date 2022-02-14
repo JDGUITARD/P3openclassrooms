@@ -61,6 +61,20 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
+#page-resto .menus h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+#page-resto .menus h3::after {
+  content: "";
+  position: absolute;
+  height: 0.25rem;
+  width: 3rem;
+  left: 0;
+  top: 2rem;
+  background-color: #99E2D0;
+}
 @media (max-width: 992px) {
   #page-resto .menus {
     grid-template-columns: 1fr;
@@ -73,7 +87,7 @@ body {
     background-color: white;
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 2px 1px 8px -3px #000000;
+    box-shadow: 2px 1px 8px -3px #7E7E7E;
     margin: 0.5rem;
   }
   #page-resto .menus .menu__category .menu-item .menu-item__prix {
@@ -91,6 +105,9 @@ body {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+  #page-resto .menus .menu__category .menu-item:hover {
+    cursor: pointer;
   }
   #page-resto .menus .menu__category .menu-item .menu-item__check {
     flex-shrink: 0;
@@ -117,6 +134,28 @@ body {
   #page-resto .menus .menu__category .menu-item:hover i {
     animation: quaterspin 1s ease;
   }
+}
+#page-resto .order {
+  height: 30vh;
+  display: grid;
+  place-items: center;
+}
+#page-resto .order button {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 2px 1px 8px -3px #000000;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  transition: all 200ms;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+#page-resto .order button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=restaurant1.css.map */

@@ -106,6 +106,8 @@ a {
 
  & li{
      position:relative;
+     display:flex;
+     align-items:center;
      &::before{
          content:counter(steps);
          counter-increment:steps;
@@ -129,6 +131,10 @@ a {
     box-shadow:2px 1px 8px -3px #000000;
     &:hover{
         transform:scale(1.02);
+        background-color:lighten(#9356DC,35%);
+        i::before{
+            color:#9356DC;
+        }
     }
     & i.fas{
         margin-right: 1rem;
@@ -178,6 +184,7 @@ a {
             background-size:cover; 
             border-radius: 1rem 1rem 0 0;
             box-shadow:3px 3px 5px grey;
+            background-position:center;
     } 
         .card__image1{
             background-image:url(../images/restos/menu1.jpg);

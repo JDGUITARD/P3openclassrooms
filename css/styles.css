@@ -113,6 +113,8 @@ a {
 }
 .tuto li {
   position: relative;
+  display: flex;
+  align-items: center;
   list-style-type: none;
   background-color: #F6F6F6;
   padding: 1.5rem 2rem;
@@ -137,6 +139,10 @@ a {
 }
 .tuto li:hover {
   transform: scale(1.02);
+  background-color: #f2eafb;
+}
+.tuto li:hover i::before {
+  color: #9356DC;
 }
 .tuto li i.fas {
   margin-right: 1rem;
@@ -181,6 +187,7 @@ a {
   background-size: cover;
   border-radius: 1rem 1rem 0 0;
   box-shadow: 3px 3px 5px grey;
+  background-position: center;
 }
 #homepage .menus .card .card__image1 {
   background-image: url(../images/restos/menu1.jpg);

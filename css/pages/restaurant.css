@@ -9,9 +9,11 @@
 @keyframes appear {
   0% {
     transform: translateY(50%);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 body {
@@ -93,6 +95,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   position: relative;
+  margin-bottom: 1rem;
 }
 #page-resto .menus h3::after {
   content: "";

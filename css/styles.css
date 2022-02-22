@@ -72,7 +72,7 @@ header {
 }
 
 main {
-  padding: 0 7rem;
+  padding: 0 1rem;
 }
 @media (max-width: 992px) {
   main {
@@ -82,6 +82,7 @@ main {
 
 h1, h2, h3, h4, h5, h6, p {
   padding: 0;
+  margin: 0;
 }
 
 p {
@@ -164,7 +165,7 @@ a {
 }
 @media (max-width: 767px) {
   #homepage .menus .menus__cards {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 #homepage .menus .menus__cards .new {
@@ -240,6 +241,10 @@ h2 {
   font-family: "Shrikhand", "sans-serif";
   font-weight: 500;
   padding: 1rem 0;
+}
+
+footer i {
+  margin-right: 0.5rem;
 }
 
 p {

@@ -16,10 +16,6 @@
     opacity: 1;
   }
 }
-body {
-  background-color: #F6F6F6;
-}
-
 #page-resto header::before {
   display: inline-block;
   font-style: normal;
@@ -43,9 +39,10 @@ body {
   object-position: center;
   position: static;
 }
-#page-resto .resto__title {
-  margin-top: -2rem;
+#page-resto .grandtitle {
   border-radius: 2rem 2rem 0 0;
+  background-color: #F6F6F6;
+  margin-top: -2rem;
   position: relative;
 }
 #page-resto .resto__title h2 {

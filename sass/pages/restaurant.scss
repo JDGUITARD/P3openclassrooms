@@ -17,10 +17,7 @@
     } 
 }
 
-body{
-    background-color:#F6F6F6;
 
-}
 
 #page-resto{ 
     header::before{
@@ -46,10 +43,15 @@ body{
     object-position:center;
     position:static;
 }
-.resto__title{
+
+.grandtitle{
+    border-radius: 2rem 2rem 0 0;
+    background-color:#F6F6F6;
     margin-top:-2rem;
-    border-radius:2rem 2rem 0 0;
     position:relative;
+}
+.resto__title{
+    
     h2{ 
         font-family: "shrikhand", "sans-serif";
         padding:2rem 1rem; 

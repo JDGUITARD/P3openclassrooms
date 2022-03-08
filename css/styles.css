@@ -163,7 +163,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   #homepage .menus .menus__cards {
     grid-template-columns: 1fr;
   }
@@ -226,7 +226,7 @@ a {
   opacity: 0;
   transition: all 200ms ease-in-out;
 }
-#homepage .menus .card__description:hover .fas {
+#homepage .menus .card__description .fas:hover {
   opacity: 1;
   transform: translateY(-50%) scale(1.04);
 }
